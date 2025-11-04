@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jair Batista Gomes - Desenvolvedor Front-end</title>
+    <link rel="stylesheet" href="assets/css/styles.css"> 
+</head>
+<body>
+
+    <!-- Cabeçalho Principal: Contém a navegação e logotipo, projetado para ser fixo -->
+    <header class="main-header" data-component="header-navigation">
+        <div class="container header-container">
+            <!-- Logotipo ou Nome do Portfólio -->
+            <a href="index.html" class="site-logo" aria-label="Voltar para a Página Inicial">
+                Meu Portfólio
+            </a>
+
+            <!-- Navegação Principal -->
+            <nav class="main-nav" aria-label="Navegação Principal do Site">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link current-page" aria-current="page">Início</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="curriculo.html" class="nav-link">Currículo</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="ajuda.html" class="nav-link">Ajuda</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botão para menu mobile, se aplicável (escondido por padrão para desktop) -->
+            <button class="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menu de navegação">
+                <span class="sr-only">Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Seção Hero: Apresentação inicial impactante do portfólio -->
+    <main>
+        <section class="hero-section" id="hero" data-component="hero-introduction">
+            <div class="container hero-content">
+                <div class="hero-text-block">
+                    <p class="hero-greeting">Olá, meu nome é</p>
+                    <h1 class="hero-title">Jair Batista Gomes</h1>
+                    <p class="hero-subtitle">Desenvolvedor Front-end</p>
+                    <p class="hero-description">Transformando ideias em experiências digitais intuitivas e acessíveis. Minha paixão é criar interfaces que encantam e resolvem problemas reais.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="button button-primary">Ver Projetos</a>
+                        <a href="contato.html" class="button button-secondary">Vamos Conversar</a>
+                    </div>
+                </div>
+                <div class="hero-image-block">
+                    <!-- Imagem de perfil ou ilustração representativa -->
+                    <img src="assets/images/perfil.jpg" alt="Foto de perfil de Jair, desenvolvedor front-end" class="profile-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Habilidades Principais -->
+        <section class="skills-section" id="skills" data-component="core-skills">
+            <div class="container">
+                <h2 class="section-title">Minhas Habilidades</h2>
+                <p class="section-subtitle">Ferramentas e tecnologias que domino para construir soluções web.</p>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="assets/icons/html5.svg" alt="Ícone HTML5" class="skill-icon">
+                        <h3 class="skill-name">HTML5</h3>
+                        <p class="skill-description">Estrutura semântica e acessível.</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="assets/icons/css-3.svg" alt="Ícone CSS3" class="skill-icon">
+                        <h3 class="skill-name">CSS3</h3>
+                        <p class="skill-description">Estilização responsiva e moderna.</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="assets/icons/js.svg" alt="Ícone JavaScript" class="skill-icon">
+                        <h3 class="skill-name">JavaScript</h3>
+                        <p class="skill-description">Lógica interativa e dinâmica.</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="assets/icons/react.svg" alt="Ícone React" class="skill-icon">
+                        <h3 class="skill-name">React</h3>
+                        <p class="skill-description">Desenvolvimento de componentes.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Projetos: Galeria de projetos desenvolvidos -->
+        <section class="projects-section" id="projects" data-component="portfolio-projects">
+            <div class="container">
+                <h2 class="section-title">Meus Projetos Recentes</h2>
+                <p class="section-subtitle">Uma amostra dos meus trabalhos em atividades de checkout de presença.</p>
+                <div class="projects-grid">
+                    <!-- Projeto 1 -->
+                    <article class="project-card">
+                        <img src="assets/images/Whatsapp.jpg" alt="Miniatura do Projeto Whatsapp" class="project-thumbnail">
+                        <div class="project-info">
+                            <h3 class="project-title">Interface do WhatsApp (App de Mensagens)</h3>
+                            <p class="project-description">Checkout módulo 1.</p>
+                            <a href="project-detail-1.html" class="button button-small" aria-label="Ver detalhes do projeto Loja Virtual de Eletrônicos">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 2 -->
+                    <article class="project-card">
+                        <img src="assets/images/AVA.jpg" alt="Miniatura do Projeto AVA UFMS" class="project-thumbnail">
+                        <div class="project-info">
+                            <h3 class="project-title">AVA UFMS</h3>
+                            <p class="project-description">Checkout módulo 2.</p>
+                            <a href="project-detail-2.html" class="button button-small" aria-label="Ver detalhes do projeto Dashboard Analítico Interativo">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 3 -->
+                    <article class="project-card">
+                        <img src="assets/images/Sou.jpg" alt="Miniatura do Projeto Sou UFMS" class="project-thumbnail">
+                        <div class="project-info">
+                            <h3 class="project-title">Sou UFMS</h3>
+                            <p class="project-description">Checkout módulo 3.</p>
+                            <a href="project-detail-3.html" class="button button-small" aria-label="Ver detalhes do projeto Landing Page de Eventos Culturais">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Call-to-Action para Contato -->
+        <section class="cta-section" data-component="call-to-action">
+            <div class="container cta-content">
+                <h2 class="section-title cta-title">Pronto para Iniciarmos um Projeto Incrível Juntos?</h2>
+                <p class="cta-description">Tenho certeza que minhas habilidades podem agregar valor ao seu próximo desafio. Entre em contato e vamos conversar!</p>
+                <a href="contato.html" class="button button-primary button-large">Entre em Contato</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé: Informações de contato, direitos autorais e links sociais -->
+    <footer class="main-footer" data-component="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">Meu Portfólio</a>
+                <p class="copyright">&copy; 2025 Jair Batista Gomes. Todos os direitos reservados.</p>
+            </div>
+            <nav class="footer-nav" aria-label="Navegação do Rodapé">
+                <ul class="footer-links-list">
+                    <li class="footer-link-item"><a href="index.html" class="footer-link">Início</a></li>
+                    <li class="footer-link-item"><a href="sobre.html" class="footer-link">Sobre Mim</a></li>
+                    <li class="footer-link-item"><a href="curriculo.html" class="footer-link">Currículo</a></li>
+                </ul>
+                <ul class="footer-links-list">
+                    <li class="footer-link-item"><a href="contato.html" class="footer-link">Contato</a></li>
+                    <li class="footer-link-item"><a href="ajuda.html" class="footer-link">Ajuda</a></li>
+                </ul>
+            </nav>
+            <div class="social-links" aria-label="Links para Redes Sociais">
+                <p class="social-title">Conecte-se Comigo:</p>
+                <ul class="social-list">
+                    <li class="social-item"><a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Perfil no LinkedIn"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a></li>
+                    <li class="social-item"><a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Perfil no GitHub"><img src="assets/icons/github.svg" alt="GitHub"></a></li>
+                    <li class="social-item"><a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Enviar um e-mail"><img src="assets/icons/mail.svg" alt="E-mail"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

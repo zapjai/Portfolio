@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - Jair Batista Gomes | Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adicione links para fontes externas, como Google Fonts, se desejar -->
+</head>
+<body>
+
+    <!-- Cabeçalho da página: Navegação principal -->
+    <header data-component="main-header">
+        <div class="container">
+            <h1 class="logo"><a href="index.html" aria-label="Voltar para a página inicial">Jair Batista Gomes</a></h1>
+            <nav class="main-nav" aria-label="Navegação Principal">
+                <button class="menu-toggle" aria-controls="main-menu" aria-expanded="false" aria-label="Abrir menu">☰</button>
+                <ul id="main-menu" class="nav-list">
+                    <li><a href="index.html" data-nav-item="home">Início</a></li>
+                    <li><a href="sobre.html" data-nav-item="about" class="active">Sobre</a></li>
+                    <li><a href="curriculo.html" data-nav-item="resume">Currículo</a></li>
+                    <li><a href="contato.html" data-nav-item="contact">Contato</a></li>
+                    <li><a href="ajuda.html" data-nav-item="help">Ajuda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Hero: Destaque da página Sobre -->
+    <section class="hero hero-about" data-section="hero-about">
+        <div class="container">
+            <h2 class="hero-title">Um Pouco Sobre Mim</h2>
+            <p class="hero-subtitle">Conheça minha jornada, paixões e o que me move.</p>
+        </div>
+    </section>
+
+    <!-- Seção: Minha História -->
+    <section class="section-padded" data-section="my-story">
+        <div class="container">
+            <h3 class="section-title">Minha História e Interesses</h3>
+            <div class="story-content">
+                <div class="story-text">
+                    <p>Desde jovem, fui fascinado pela interseção entre tecnologia e criatividade. Minha jornada no mundo digital começou com a curiosidade em entender como as coisas funcionavam por trás da tela. Essa curiosidade se transformou em uma paixão por criar interfaces intuitivas e experiências de usuário memoráveis.</p>
+                    <p>Ao longo dos anos, dediquei-me a aprender e aprimorar minhas habilidades em diversas áreas do desenvolvimento e design. Acredito que um bom projeto não é apenas funcional, mas também esteticamente agradável e, acima de tudo, útil para quem o utiliza.</p>
+                    <p>Fora do código, sou um entusiasta de fotografia e leitura. Acredito que manter a mente ativa e explorar diferentes paixões alimenta minha criatividade e me ajuda a abordar os desafios profissionais com uma perspectiva renovada.</p>
+                </div>
+                <!-- Você pode adicionar uma imagem aqui se desejar -->
+                <!-- <div class="story-image">
+                    <img src="assets/images/about-me.jpg" alt="[Seu Nome] em um ambiente de trabalho criativo">
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Habilidades Técnicas -->
+    <section class="section-padded bg-light" data-section="technical-skills">
+        <div class="container">
+            <h3 class="section-title">Habilidades Técnicas</h3>
+            <div class="skills-grid">
+                <div class="skill-category" data-skill-type="frontend">
+                    <h4>Frontend</h4>
+                    <ul>
+                        <li>HTML5, CSS3 (Sass/Less)</li>
+                        <li>JavaScript (ES6+), React, Vue.js, Angular</li>
+                        <li>Responsividade, Acessibilidade (WCAG)</li>
+                        <li>Ferramentas de Build (Webpack, Vite)</li>
+                    </ul>
+                </div>
+                <div class="skill-category" data-skill-type="backend">
+                    <h4>Backend</h4>
+                    <ul>
+                        <li>Node.js (Express), Python (Django/Flask), Ruby (Rails)</li>
+                        <li>Bancos de Dados (SQL: PostgreSQL, MySQL; NoSQL: MongoDB)</li>
+                        <li>APIs RESTful e GraphQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category" data-skill-type="other">
+                    <h4>Outras Habilidades</h4>
+                    <ul>
+                        <li>Git & GitHub/GitLab</li>
+                        <li>Metodologias Ágeis (Scrum, Kanban)</li>
+                        <li>Inglês Avançado</li>
+                        <li>Resolução de Problemas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Experiência Profissional -->
+    <section class="section-padded" data-section="professional-experience">
+        <div class="container">
+            <h3 class="section-title">Experiência Profissional</h3>
+            <div class="experience-timeline">
+                <div class="experience-item" data-experience-id="dev-senior-2022">
+                    <span class="timeline-date">Ago 2007 - Presente</span>
+                    <div class="experience-details">
+                        <h4>Técnico de tecnologia da Informação | MSGÁS</h4>
+                        <p class="experience-location">MS, Brasil</p>
+                        <ul>
+                            <li>Suporte a usuários.</li>
+                            <li>Infraestrutura de redes.</li>
+                            <li>Desenvolvimento de softwares.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Educação -->
+    <section class="section-padded bg-light" data-section="education">
+        <div class="container">
+            <h3 class="section-title">Educação</h3>
+            <div class="education-list">
+                <div class="education-item" data-education-id="pos-graduacao">
+                    <h4>Pós-Graduação em Segurança da informação</h4>
+                    <p class="education-institution">Senac - SP</p>
+                    <p class="education-period">2023 - 2024</p>
+                    <p class="education-description">Foco em segurança da informação.</p>
+                </div>
+                <div class="education-item" data-education-id="graduacao">
+                    <h4>Comunicação Social</h4>
+                    <p class="education-institution">Universidade Federal de MS</p>
+                    <p class="education-period">1992 - 1996</p>
+                    <p class="education-description">Projeto final: Revista Histórica Regional.</p>
+                <div class="education-item" data-education-id="graduacao">
+                    <h4>Tecnólogo em Processos Gerenciais</h4>
+                    <p class="education-institution">Universidade Federal de MS</p>
+                    <p class="education-period">2022 - 2024</p>
+                    <p class="education-description">Projeto final: Gerenciamento de tempo.</p>
+                </div>
+                <div class="education-item" data-education-id="graduacao">
+                    <h4>Tecnólogo em Tecnologia da Informação</h4>
+                    <p class="education-institution">Universidade Federal de MS</p>
+                    <p class="education-period">2025 - Presente</p>
+                    <p class="education-description">Projeto final: Sistema de Gerenciamento de vídeos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé da página: Informações de contato e direitos autorais -->
+    <footer data-component="main-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Jair Batista Gomes. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/[seu-perfil]" target="_blank" aria-label="Meu LinkedIn" data-social="linkedin">LinkedIn</a>
+                <a href="https://github.com/[seu-usuario]" target="_blank" aria-label="Meu GitHub" data-social="github">GitHub</a>
+                <a href="mailto:jair@email.com" aria-label="Meu Email" data-social="email">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript para funcionalidades interativas, como o ano no footer -->
+    <script src="script.js"></script>
+    <script>
+        // Atualiza o ano no footer dinamicamente
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Exemplo de script para o menu toggle (se não estiver em script.js)
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainMenu = document.getElementById('main-menu');
+
+        if (menuToggle && mainMenu) {
+            menuToggle.addEventListener('click', () => {
+                menuToggle.setAttribute('aria-expanded', !expanded);
+                mainMenu.classList.toggle('open');
+            });
+        }
+    </script>
+</body>
+</html>

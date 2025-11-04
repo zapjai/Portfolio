@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Jair Batista Gomes</title>
+    <!-- Link para o arquivo CSS principal (será criado separadamente) -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link para ícones (ex: Font Awesome, se usado) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body data-page="contato">
+    <!-- Cabeçalho da Página -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">
+                <span class="header__logo-text">Portfólio</span>
+            </a>
+            <nav class="header__nav" aria-label="Navegação Principal">
+                <button class="header__nav-toggle" aria-controls="main-menu" aria-expanded="false" aria-label="Abrir menu de navegação">
+                    <span class="header__nav-toggle-icon"></span>
+                </button>
+                <ul class="header__menu" id="main-menu" data-visible="false">
+                    <li class="header__menu-item"><a href="index.html" class="header__menu-link">Início</a></li>
+                    <li class="header__menu-item"><a href="sobre.html" class="header__menu-link">Sobre</a></li>
+                    <li class="header__menu-item"><a href="curriculo.html" class="header__menu-link">Currículo</a></li>
+                    <li class="header__menu-item"><a href="contato.html" class="header__menu-link header__menu-link--active">Contato</a></li>
+                    <li class="header__menu-item"><a href="ajuda.html" class="header__menu-link">Ajuda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal da Página -->
+    <main class="main-content">
+        <!-- Seção Hero - Contato -->
+        <section class="hero hero--small" data-section="contato-hero">
+            <div class="container hero__container">
+                <h1 class="hero__title">Vamos Conversar!</h1>
+                <p class="hero__subtitle">Entre em contato para discutirmos seu projeto ou ideia.</p>
+            </div>
+        </section>
+
+        <!-- Seção de Informações de Contato -->
+        <section class="section section--padded" data-section="info-contato">
+            <div class="container">
+                <h2 class="section__title">Minhas Informações de Contato</h2>
+                <div class="info-cards">
+                    <div class="info-card" data-info="email">
+                        <i class="fas fa-envelope info-card__icon" aria-hidden="true"></i>
+                        <h3 class="info-card__title">Email</h3>
+                        <p class="info-card__text"><a href="mailto:seu.email@exemplo.com" class="info-card__link">jair@email.com</a></p>
+                    </div>
+                    <div class="info-card" data-info="telefone">
+                        <i class="fas fa-phone-alt info-card__icon" aria-hidden="true"></i>
+                        <h3 class="info-card__title">Telefone</h3>
+                        <p class="info-card__text"><a href="tel:+5511987654321" class="info-card__link">(67) 99999-9999</a></p>
+                    </div>
+                    <div class="info-card" data-info="social-media">
+                        <i class="fas fa-share-alt info-card__icon" aria-hidden="true"></i>
+                        <h3 class="info-card__title">Redes Sociais</h3>
+                        <div class="info-card__social-links">
+                            <a href="https://linkedin.com/in/seuperfil" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/seuperfil" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://twitter.com/seuperfil" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Formulário de Contato -->
+        <section class="section section--gray section--padded" data-section="formulario-contato">
+            <div class="container">
+                <h2 class="section__title">Envie uma Mensagem</h2>
+                <form class="contact-form" action="#" method="POST" data-form-type="contato">
+                    <div class="form-group">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" id="nome" name="nome" class="form-input" placeholder="Seu nome completo" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="seu.email@exemplo.com" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto" class="form-label">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto" class="form-input" placeholder="Assunto da sua mensagem" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem" class="form-label">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" class="form-textarea" placeholder="Digite sua mensagem aqui..." required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="button button--primary form-submit-button" data-action="enviar-mensagem">Enviar Mensagem</button>
+                    <!-- Placeholder para mensagem de sucesso/erro -->
+                    <div class="form-message" role="status" aria-live="polite" data-message-status>
+                        <!-- Mensagem de sucesso ou erro será exibida aqui via JavaScript -->
+                    </div>
+                </form>
+            </div>
+        </section>
+
+       
+    </main>
+
+    <!-- Rodapé da Página -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__copy">&copy; 2025 Jair Batista Gomes. Todos os direitos reservados.</p>
+            <div class="footer__social">
+                <a href="https://linkedin.com/in/seuperfil" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/seuperfil" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/seuperfil" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
